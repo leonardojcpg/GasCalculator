@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/subtitle"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/alcoholPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/subTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:hint="Preço do Álcool"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/gasPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/alcoholPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:inputType="numberDecimal"
+        android:hint="Preço da Gasolina" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gasPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="20"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/clearInputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="20"
+        android:text="Limpar" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/clearInputs"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:text="Resultado"
+        />
+
+</RelativeLayout>
